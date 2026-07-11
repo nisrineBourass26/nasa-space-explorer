@@ -1,0 +1,73 @@
+/* --- Global Styles: Background and Spacing --- */
+
+body {
+    /* Set the background image for the entire page */
+    background: url("background.jpg") center center fixed;
+    background-size: cover;
+    color: white; /* Permanent white text for space theme */
+    padding-top: 56px; 
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR & FOOTER */
+.navbar, footer {
+    background-color: rgba(0, 0, 0, 0.85) !important; 
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px); 
+}
+
+footer {
+    margin-top: auto; /* Pushes footer to bottom */
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+/* --- Reusable Content Boxes --- */
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.65); 
+    padding: 3rem 4rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    max-width: 800px;
+}
+
+.main-content-box {
+    background-color: rgba(18, 18, 18, 0.9); 
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    margin-bottom: 2rem; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- Component Styling --- */
+
+.btn-primary {
+    background-color: #0b3d91; /* NASA blue */
+    border-color: #0b3d91;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1769aa;
+    transform: translateY(-2px); 
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.card {
+    background: #111 !important;
+    border: 1px solid #333 !important;
+    color: white !important;
+}
+
+img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
